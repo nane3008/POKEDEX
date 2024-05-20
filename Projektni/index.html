@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>Pokédex</title>
+ <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+ <style>
+     @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+     </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+ <header>
+    <h1>Pokédex</h1> </header>
+    <nav>
+        <ul>
+          <li><a href="http://localhost/Projektni/login.php">login</a></li>
+          
+        </ul>
+      </nav>
+ <div id="search-container">
+    <label for="searchInput">Search Pokémon:</label>
+    <input type="text" id="searchInput" placeholder="Enter Pokémon name or number">
+</div>
+
+<div id="type-filter-container">
+    <label for="typeFilter">Filter by Type:</label>
+    <select id="typeFilter">
+        <option value="">All Types</option>
+        <!-- Add options for each Pokémon type dynamically if needed -->
+    </select>
+</div>
+<div id="pokemon-container" class="pokemon-list"></div>
+<div id="modal-container" class="modal-container">
+    <div id="modal-content" class="modal-content"></div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
